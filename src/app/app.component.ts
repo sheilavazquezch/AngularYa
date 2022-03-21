@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = 'Rodriguez Pablo';
-  edad = 7;
-  sueldos = [1700, 1600, 1900];
+  contador = 1;
+
+  incrementar() {
+    this.contador++;
+  }
+
+  decrementar() {
+    this.contador--;
+  }
+
 }
